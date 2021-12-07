@@ -27,7 +27,10 @@ class IntegrationTests(@Autowired val restTemplate: TestRestTemplate) {
 
     @Test
     fun `Asset article page title, content and status code`() {
-        println(">>TODO")
+        val title = "Reactor Bismuth is out"
+        val entity = restTemplate.getForEntity<String>("/article/${title.toSlug()}")
+        assertThat(entity.statusCode).isEqualTo(HttpStatus.OK)
+        assertThat(entity.body).contains(title, "Lorem ipsum", "dolor sit amet")
     }
 
     @AfterAll

@@ -23,8 +23,8 @@ class BlogConfiguration {
         ))
 
         articleRepository.save(Article(
-                title="Reactor Bismuth is out",
-                headline = "Lorem ipsum",
+                title="Reactor Bismuth is in",
+                headline = "ipsum Lorem",
                 content = "dolor sit amet",
                 author = smaldini
         ))
