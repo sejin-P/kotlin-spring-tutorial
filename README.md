@@ -12,3 +12,5 @@ gradle: dependency tool
 ```
 
 To run with this command, you must inject plugin 'application' and then set mainclass.
+
+reference: https://docs.gradle.org/current/samples/sample_building_kotlin_applications.html
